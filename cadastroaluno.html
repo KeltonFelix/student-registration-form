@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do aluno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        form {
+            width: 90%;
+            max-width: 900px;
+            margin: 60px auto;
+        }
+
+        legend {
+            font-weight: 600;
+        }
+
+        input, select, textarea {
+    margin-bottom: 12px;
+} 
+* {
+    box-sizing: border-box;
+}
+        input, select, textarea {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 2px;
+
+}
+
+    </style>
+</head>
+<body style="background-color: #55728b;">
+
+
+    <center><h1 style="font-family: 'Poppins', sans-serif; font-size: 35px; color: rgb(0, 0, 0); background-color: rgb(41, 155, 140); padding: 10px;">Cadastro de ALuno</h1></center>
+
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+        Nome Completo: <input type="text" name="nome" id="nome" size="28" placeholder="Digite o nome completo do aluno:" required><br><br>
+        Data de Nascimento: <input type="date" name="data" id="data"><br><br>
+        Sexo: 
+        <select name="selecionar" placeholder="Selecione o sexo">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="O">Outro</option>
+                </select><br><br>
+        Celular: <input type="text" name="celular" placeholder="Digite o Número de celular:" size="28" required><br><br>
+        E-mail: <input type="email" name="email" placeholder="Digite o e-mail do aluno:" size="30" required><br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            Rua: <input type="text" name="rua" placeholder="Digite o nome da rua:" required><br><br>
+            Número: <input type="number" name="numero" placeholder="Digite o número da residência:" required><br><br>
+            Bairro: <input type="text" name="bairro" placeholder="Digite o bairro:" required><br><br>
+            Cidade: <input type="text" name="cidade" placeholder="Digite o nome da cidade:" required><br><br>
+            Estado:
+            <select name="selecionar">
+                <option value="estado">Selecione o estado</option>
+                <option value="ac">Acre</option>
+                <option value="al">Alagoas</option>
+                <option value="ap">Amapá</option>
+                <option value="am">Amazonas</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+                <option value="df">Distrito Federal</option>
+                <option value="es">Espírito Santo</option>
+                <option value="go">Goiás</option>
+                <option value="ma">Maranhão</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ms">Mato Grosso do Sul</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="pa">Pará</option>
+                <option value="pb">Paraíba</option>
+                <option value="pr">Paraná</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pi">Piauí</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="ro">Rondônia</option>
+                <option value="rr">Roraima</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="sp">São Paulo</option>
+                <option value="se">Sergipe</option>
+                <option value="to">Tocantins</option>
+
+            </select>
+            CEP: <input type="number" name="cep" placeholder="Digite o CEP:"><br><br>
+            Complemento: <input type="text" name="complemento" placeholder="Digite o complemento:"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações Acadêmicas</legend>
+            Curso: <input type="text" name="curso" placeholder="Digite o nome do curso:"><br><br>
+            Matrícula: <input type="number" name="matricula" placeholder="Digite o número da matrícula:"><br><br>
+            Período: 
+            <select name="selecionar">
+                <option value="periodo">Selecione o período</option>
+                <option value="1">1º Período</option>
+                <option value="2">2º Período</option>
+                <option value="3">3º Período</option>
+                <option value="4">4º Período</option>
+            </select><br><br>
+
+            Disciplinas favotitas: <input type="text" name="disciplinas" placeholder="Selecione as disciplinas favoritas:"><br><br>
+            <input type="checkbox"> Matemática<br>
+            <input type="checkbox"> Português<br>
+            <input type="checkbox"> História<br>
+            <input type="checkbox"> Geografia<br>
+            <input type="checkbox"> Ciências<br>
+            <input type="checkbox"> Educação Física<br><br>
+
+            Observações:<br>
+            <textarea name="observacoes" rows="4" cols="50" placeholder="Digite observações sobre o aluno: "></textarea><br><br>
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
